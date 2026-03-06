@@ -43,6 +43,10 @@
 * **`@vscode`**：操作 VS Code 本身的功能。
 * **`@history`**：參考最近的修改紀錄或對話歷史。
 * **`@docs`**：使用妳手動加入的官方文件 (如 Python 3, SQLite)。
+* **`@github`**：呼叫 GitHub 相關操作
+  - `@github 這個 PR 有什麼問題？`
+  - `@github 幫我找最近的 commit`
+  - `@github 這個 issue 怎麼解決？`
 
 ### 2. 任務動作指令 (`/`)
 * **`/explain`**：逐行解釋代碼邏輯。
@@ -55,6 +59,27 @@
 * **`/search`**：調用 VS Code 全域搜尋。
 * **`/startDebugging`**：直接啟動除錯模式。
 * **`/clear`**：清除對話紀錄並重置。
+
+---
+
+## 🔀 Git & PR 功能
+
+### Commit Message 規範（Conventional Commits）
+格式：`<type>(<scope>): <subject>`
+
+| Type | 用途 |
+|------|------|
+| `feat` | 新增功能 |
+| `fix` | 修復 Bug |
+| `docs` | 文件變更 |
+| `style` | 格式調整 |
+| `refactor` | 重構 |
+| `chore` | 雜項維護 |
+
+# 你這個純文件專案的常用範例：
+docs(roadmap): update week3 learning notes
+docs(ai-tools): add Google AI Studio section
+chore: update .gitignore
 
 ---
 
