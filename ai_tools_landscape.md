@@ -28,6 +28,8 @@
 > - 第一層：主要互動介面（IDE / Terminal / Cloud）
 > - 第二層：自主程度（Assistive / Agentic / Autonomous）
 
+---
+
 ### 2.1 IDE 內嵌型助理（IDE-Integrated Assistants）
 
 適合：補全、局部重構、解釋程式碼、生成測試、寫文件。  
@@ -84,14 +86,22 @@
 
 ---
 
-### 2.6 模型 Playground / API 原型工具（Model Playground / API Prototyping Tools）
+### 2.6 模型測試與原型開發平台（Model Playground & Prototyping Tools）
 
 適合：測試 Prompt、比較模型表現、調整參數、安全設定、函式呼叫、結構化輸出，並快速產出 API 範例程式。  
 特徵：不是日常寫專案 code 的主力編輯器，也不是自主 coding agent；核心用途是「先把模型行為試對，再接進你的應用」。
 
+- **OpenAI Playground**：測試 GPT 系列模型，可調整參數與匯出程式碼
+- **Anthropic Console**：測試 Claude 系列模型
 - **Google AI Studio**：Google 的 Gemini 模型實驗台與原型開發入口，可用來測 prompt、調整 run settings、啟用 structured output / function calling / code execution / grounding、取得與管理 API key、監看用量，並透過 **Get code** 產出範例程式後接回正式專案。
 除了測 prompt、管理 API key、監看用量，也可透過內建 code editor 與 build mode，
 直接生成、編輯、執行與部署前端或 full-stack app prototype。
+
+Google AI Studio
+├── 當「測試平台」用 → 2.0 Model Playground
+├── 當「建前端專案」用 → 接近 2.1 IDE 內嵌型助理
+└── 拿到 API Key 後串接 → 支援 Gemini CLI 等工具
+
 ------------------------------------------------------------------------
 
 ## 3 Agent / 工作流自動化（把「對話」變「執行」）
@@ -573,4 +583,3 @@ Google Antigravity 的優勢不是單純「能部署」，而是：
 ## 最終一句話總結
 
 > **我目前最適合的配置是：VS Code 當主工作台，Copilot 負責補全，Continue 負責規劃與架構，Copilot coding agent 負責 GitHub / PR 流程，Google AI Studio 負責 Gemini 模型與 API 原型驗證，而 Google Antigravity 作為更進階的 agent-first 工作台保留在需要時導入。**
-
