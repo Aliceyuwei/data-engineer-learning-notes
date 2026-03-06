@@ -1,0 +1,34 @@
+# macOS 系統檔
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# 環境變數（保護 Token）
+.env
+.env.local
+
+# 資料庫檔案
+*.db
+*.sqlite
+*.sqlite3
+
+# 測試覆蓋率
+.coverage
+htmlcov/
+.pytest_cache/
+
+# VS Code
+.vscode/
